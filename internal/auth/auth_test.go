@@ -41,7 +41,3 @@ func TestGetAPIKey_NoAuthHeader(t *testing.T) {
 		t.Errorf("expected error to be %v, but got %v", expectedError, err)
 	}
 }
-
-func unused() {
-	
-}
