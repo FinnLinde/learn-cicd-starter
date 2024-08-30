@@ -11,8 +11,7 @@ func TestGetAPIKey(t *testing.T) {
 	headers.Set("Authorization", "ApiKey my-api-key")
 
 	// when
-	got, err :=
-		GetAPIKey(headers)
+	got, err := GetAPIKey(headers)
 
 	// then
 	if err != nil {
@@ -41,4 +40,8 @@ func TestGetAPIKey_NoAuthHeader(t *testing.T) {
 	if err != expectedError {
 		t.Errorf("expected error to be %v, but got %v", expectedError, err)
 	}
+}
+
+func unused() {
+	
 }
