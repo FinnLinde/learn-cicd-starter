@@ -11,7 +11,8 @@ func TestGetAPIKey(t *testing.T) {
 	headers.Set("Authorization", "ApiKey my-api-key")
 
 	// when
-	got, err := GetAPIKey(headers)
+	got, err :=
+		GetAPIKey(headers)
 
 	// then
 	if err != nil {
